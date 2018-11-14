@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>demo5webapi</name>
+    </assembly>
+    <members>
+        <member name="T:demo5webapi.Src.CommonInfo.BrotherSamUser">
+            <summary>
+            用户信息实体类
+            </summary>
+        </member>
+        <member name="P:demo5webapi.Src.CommonInfo.BrotherSamUser.UserId">
+            <summary>
+            用户编号
+            </summary>
+        </member>
+        <member name="P:demo5webapi.Src.CommonInfo.BrotherSamUser.UserName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:demo5webapi.Src.CommonInfo.BrotherSamUser.TeamId">
+            <summary>
+            归属团队编号
+            </summary>
+        </member>
+        <member name="P:demo5webapi.Src.CommonInfo.BrotherSamUser.UserSex">
+            <summary>
+            用户性别 1：男。0：女。null/空格：未知
+            </summary>
+        </member>
+        <member name="P:demo5webapi.Src.CommonInfo.BrotherSamUser.UserPhoneNumber">
+            <summary>
+            用户电话号码
+            </summary>
+        </member>
+        <member name="P:demo5webapi.Src.CommonInfo.BrotherSamUser.UserEmail">
+            <summary>
+            用户邮箱
+            </summary>
+        </member>
+        <member name="P:demo5webapi.Src.CommonInfo.BrotherSamUser.UserRemark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:demo5webapi.Src.CommonInfo.DbHelper">
+            <summary>
+            数据库连接帮助类
+            </summary>
+        </member>
+        <member name="P:demo5webapi.Src.CommonInfo.DbHelper.ConnctionString">
+            <summary>
+            从配置文件中读取数据库连接字符串
+            </summary>
+        </member>
+        <member name="T:demo5webapi.Src.Service.UserService">
+            <summary>
+            用户信息服务类
+            </summary>
+        </member>
+        <member name="M:demo5webapi.Src.Service.UserService.FindListByUserName(System.String)">
+            <summary>
+            根据姓名查询用户资料集合
+            </summary>
+            <param name="userName">姓名</param>
+            <returns></returns>
+        </member>
+        <member name="M:demo5webapi.Startup.Get">
+            <summary>
+            这是一个api方法的注释
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
