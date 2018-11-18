@@ -4,6 +4,21 @@
         <name>demo5webapi</name>
     </assembly>
     <members>
+        <member name="T:demo5webapi.Src.appsettings.ConnectionStrings">
+            <summary>
+            ConnectionStrings配置对象
+            </summary>
+        </member>
+        <member name="P:demo5webapi.Src.appsettings.ConnectionStrings.DbServer">
+            <summary>
+            数据库名字
+            </summary>
+        </member>
+        <member name="P:demo5webapi.Src.appsettings.ConnectionStrings.ConnectionString">
+            <summary>
+            数据库连接字符串
+            </summary>
+        </member>
         <member name="T:demo5webapi.Src.CommonInfo.BrotherSamUser">
             <summary>
             用户信息实体类

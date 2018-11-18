@@ -21,9 +21,16 @@ namespace demo5webapi.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            return $"这个是增加的接口，输入的是{id}";
         }
-
+        ////brgin 新增加端口
+        //// GET api/values/5
+        //[HttpGet("{id}")]
+        //public ActionResult<string> Get(string name)
+        //{
+        //    return $"这个是增加的接口，输入的是{name}";
+        //}
+        ////end 新增加端口
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)

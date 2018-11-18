@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using demo5webapi.Src.appsettings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -35,7 +36,7 @@ namespace demo5webapi
             //    c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
             //});
             ////end 增加的
-            
+
             //begin 增加的
             //注册Swagger生成器，定义一个和多个Swagger 文档
             services.AddSwaggerGen(c =>

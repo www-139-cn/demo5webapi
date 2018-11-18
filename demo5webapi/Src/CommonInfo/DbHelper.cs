@@ -16,6 +16,7 @@ namespace demo5webapi.Src.CommonInfo
         /// </summary>
         public static string ConnctionString
         {
+            //string tre = ConnectionStrings["DbConn"].ConnectionString;
             get { return ConfigurationManager.ConnectionStrings["DbConn"].ConnectionString; }
         }
 
