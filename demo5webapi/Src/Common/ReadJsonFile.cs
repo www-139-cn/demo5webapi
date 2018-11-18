@@ -28,7 +28,7 @@ namespace demo5webapi.Src.Common
             JObject source = JObject.Parse(sourceContent);
             MyConstant.mySqlConnctionString = source["ConnectionStrings"]["DbConn"].ToString().Trim();
         }
-
+        
         /// <summary>
         /// 获取 json 中的值
         /// </summary>
