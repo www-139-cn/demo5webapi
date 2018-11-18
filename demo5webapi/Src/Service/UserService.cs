@@ -1,5 +1,4 @@
 ﻿using Dapper;
-using demo5webapi.Src.appsettings;
 using demo5webapi.Src.CommonInfo;
 using Microsoft.Extensions.Options;
 using MySql.Data.MySqlClient;
@@ -27,14 +26,8 @@ namespace demo5webapi.Src.Service
         {
             //SELECT * FROM  BrotherSamUser WHERE UserName='userName'
             //这里用using 语句块，当运行完了，会自动释放db连接资源。不用using就需要手动释放db资源
-            //using (IDbConnection db = new MySql.Data.MySqlClient.MySqlConnection("Server=localhost;Database=brothersam;Port=3306;Uid=root;Pwd=zlsmysql;"))
-            //string str = ConfigurationManager.ConnectionStrings["DbConn"].ConnectionString;
-            //var defaultcon = Configuration.GetConnectionString("DefaultConnection");
-            //var str1 = Options < ConnectionStrings > options;
-            //Configuration.GetValue<string>["ConnectionStrings:DbConn"];
-            //using (IDbConnection db = new SqlConnection(DbHelper.ConnctionString))
             //using (IDbConnection db = new MySqlConnection("Server=localhost;Database=brothersam;Port=3306;Uid=root;Pwd=zlsmysql;"))
-            using (IDbConnection db = new MySqlConnection("Server=localhost;Database=brothersam;Port=3306;Uid=root;Pwd=zlsmysql;"))
+            using (IDbConnection db = new MySqlConnection(MyConstant.mySqlConnctionString))
             {
                 //普通拼接
                 //string sql = "SELECT * FROM  BrotherSamUser WHERE UserName='" + userName + "'";

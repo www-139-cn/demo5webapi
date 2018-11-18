@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Src\appsettings\" />
     <Folder Include="Src\Login\" />
     <Folder Include="Src\Report\" />
     <Folder Include="Src\Interfaces\" />

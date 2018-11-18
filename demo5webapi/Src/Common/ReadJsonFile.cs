@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using demo5webapi.Src.CommonInfo;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -25,8 +26,8 @@ namespace demo5webapi.Src.Common
             //parse as array  
             var sourceobjects = JArray.Parse("[" + sourceContent + "]");
             JObject source = JObject.Parse(sourceContent);
-            string str = source["ConnectionStrings"]["DbConn"].ToString().Trim();
-            ;
+            MyConstant.mySqlConnctionString = source["ConnectionStrings"]["DbConn"].ToString().Trim();
+           ;
         }
 
         /// <summary>

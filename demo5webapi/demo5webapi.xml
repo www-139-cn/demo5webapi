@@ -4,21 +4,6 @@
         <name>demo5webapi</name>
     </assembly>
     <members>
-        <member name="T:demo5webapi.Src.appsettings.ConnectionStrings">
-            <summary>
-            ConnectionStrings配置对象
-            </summary>
-        </member>
-        <member name="P:demo5webapi.Src.appsettings.ConnectionStrings.DbServer">
-            <summary>
-            数据库名字
-            </summary>
-        </member>
-        <member name="P:demo5webapi.Src.appsettings.ConnectionStrings.ConnectionString">
-            <summary>
-            数据库连接字符串
-            </summary>
-        </member>
         <member name="T:demo5webapi.Src.CommonInfo.BrotherSamUser">
             <summary>
             用户信息实体类
@@ -59,14 +44,14 @@
             备注
             </summary>
         </member>
-        <member name="T:demo5webapi.Src.CommonInfo.DbHelper">
+        <member name="T:demo5webapi.Src.CommonInfo.MyConstant">
             <summary>
-            数据库连接帮助类
+            存储各种常量的class
             </summary>
         </member>
-        <member name="P:demo5webapi.Src.CommonInfo.DbHelper.ConnctionString">
+        <member name="F:demo5webapi.Src.CommonInfo.MyConstant.mySqlConnctionString">
             <summary>
-            从配置文件中读取数据库连接字符串
+            数据库连接串常量
             </summary>
         </member>
         <member name="T:demo5webapi.Src.Common.ReadJsonFile">
