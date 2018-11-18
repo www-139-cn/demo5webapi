@@ -69,6 +69,35 @@
             从配置文件中读取数据库连接字符串
             </summary>
         </member>
+        <member name="T:demo5webapi.Src.Common.ReadJsonFile">
+            <summary>
+            读写Json文件
+            </summary>
+        </member>
+        <member name="M:demo5webapi.Src.Common.ReadJsonFile.readJson(System.String)">
+            <summary>
+            读取Json文件
+            </summary>
+            <param name="jsonFileName"></param>
+        </member>
+        <member name="M:demo5webapi.Src.Common.ReadJsonFile.tranversJToken(Newtonsoft.Json.Linq.JToken,System.String,System.Collections.Generic.Dictionary{System.String,System.String}@)">
+            <summary>
+            获取 json 中的值
+            </summary>
+            <param name="token"></param>
+            <param name="propName"></param>
+            <param name="stringsList"></param>
+        </member>
+        <member name="M:demo5webapi.Src.Common.ReadJsonFile.addJson">
+            <summary>
+            在已存在 json 文件中添加 json 数据 。用 JObject add 方法添加数据，在最后以 string 类型写入进文件
+            </summary>
+        </member>
+        <member name="M:demo5webapi.Src.Common.ReadJsonFile.CreateJson">
+            <summary>
+            创建新的 json 文件
+            </summary>
+        </member>
         <member name="T:demo5webapi.Src.Service.UserService">
             <summary>
             用户信息服务类

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using demo5webapi.Src.appsettings;
+using demo5webapi.Src.Common;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,14 +31,6 @@ namespace demo5webapi
         public void ConfigureServices(IServiceCollection services)
         {
             //begin 增加的
-            ////注册Swagger生成器，定义一个和多个Swagger 文档
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
-            //});
-            ////end 增加的
-
-            //begin 增加的
             //注册Swagger生成器，定义一个和多个Swagger 文档
             services.AddSwaggerGen(c =>
             {
@@ -60,8 +53,12 @@ namespace demo5webapi
                     }
                 });
             });
+            //通过读取"appsettings.json"文件，设定一些常量（包括数据库读取字符串）2018-11-18
+            ReadJsonFile readJsonFile = new ReadJsonFile();
+            readJsonFile.readJson("appsettings.json");
             //end 增加的
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
         }
 
         //begin 增加的 大家先点击下api，展开如下图所示，可以没有注释啊，怎么来添加注释呢？

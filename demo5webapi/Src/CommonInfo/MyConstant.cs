@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace demo5webapi.Controllers
+namespace demo5webapi.Src.CommonInfo
 {
-    interface Interface
+    public class MyConstant
     {
-        //20181215 测试添加
+        public static string mySqlConnctionString;
     }
 }

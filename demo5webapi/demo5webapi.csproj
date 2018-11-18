@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Src\Common\" />
     <Folder Include="Src\Login\" />
     <Folder Include="Src\Report\" />
     <Folder Include="Src\Interfaces\" />
