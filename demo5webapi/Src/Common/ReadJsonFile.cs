@@ -27,7 +27,6 @@ namespace demo5webapi.Src.Common
             var sourceobjects = JArray.Parse("[" + sourceContent + "]");
             JObject source = JObject.Parse(sourceContent);
             MyConstant.mySqlConnctionString = source["ConnectionStrings"]["DbConn"].ToString().Trim();
-           ;
         }
 
         /// <summary>
